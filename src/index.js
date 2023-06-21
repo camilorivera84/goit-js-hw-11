@@ -1,4 +1,4 @@
-const API_KEY = '37660619-57c515de7526ffff07433eaf8'; // Reemplaza con tu clave de acceso de Pixabay
+const API_KEY = '37660619-57c515de7526ffff07433eaf8';
 
 const searchForm = document.getElementById('search-form');
 const gallery = document.querySelector('.gallery');
