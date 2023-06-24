@@ -1,3 +1,7 @@
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+import Notiflix from 'notiflix';
+
 const API_KEY = '37660619-57c515de7526ffff07433eaf8';
 
 const searchForm = document.getElementById('search-form');

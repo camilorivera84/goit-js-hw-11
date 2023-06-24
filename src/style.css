@@ -1,0 +1,47 @@
+.simple-lightbox-overlay {
+  z-index: 9999;
+}
+
+.simple-lightbox-overlay.simple-lightbox-overlay--visible {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.simple-lightbox-image {
+  position: relative !important;
+  z-index: 10000;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e4e2ec;
+  margin: 0;
+}
+
+.gallery {
+  margin-top: 20px;
+}
+
+.load-more {
+  margin-top: 20px;
+  display: none;
+}
+.background-form {
+  width: 100%;
+  height: 30px;
+  background-color: blue;
+  position: relative;
+  padding: 0;
+}
+.search-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.buttom {
+  width: 10px;
+}
