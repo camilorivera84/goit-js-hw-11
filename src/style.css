@@ -23,6 +23,24 @@ body {
 
 .gallery {
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.photo-card {
+  width: calc(
+    25% - 10px
+  ); /* Ajusta el ancho de cada foto según tus necesidades */
+  margin: 5px;
+}
+.photo-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .load-more {
@@ -44,4 +62,8 @@ body {
 }
 .buttom {
   width: 10px;
+}
+.photo-card .info {
+  display: flex;
+  justify-content: center;
 }

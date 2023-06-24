@@ -11,6 +11,7 @@ const lightbox = new SimpleLightbox('.gallery a');
 
 let currentPage = 1;
 let currentSearchQuery = '';
+let totalHits = 0;
 
 searchForm.addEventListener('submit', async e => {
   e.preventDefault();
@@ -52,7 +53,9 @@ async function fetchImages(query, page) {
       },
     });
 
-    const { hits, totalHits } = response.data;
+    const { hits, total } = response.data;
+    totalHits = total;
+
     if (hits.length > 0) {
       hits.forEach(image => {
         const photoCard = createPhotoCard(image);
@@ -118,5 +121,7 @@ function createInfoItem(label, value) {
   const item = document.createElement('p');
   item.classList.add('info-item');
   item.innerHTML = `<b>${label}:</b> ${value}`;
+  item.style.color = 'black';
+  item.style.textDecoration = 'none';
   return item;
 }
